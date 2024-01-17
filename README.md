@@ -22,4 +22,4 @@ Deployed Live Link: https://maeldeis.github.io/placeholder
 
 ## The following animation demonstrates the application functionality:
 
-![Demo.](./images/demo.gif)
+![Demo.](./assets/images/demo.gif)
