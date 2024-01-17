@@ -1,6 +1,10 @@
 # Daily-Planner-App
 
-This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
+GitHub Link: https://github.com/Maeldeis/placeholder
+
+Deployed Live Link: https://maeldeis.github.io/placeholder
+
+**This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.**
 
 ## The app performs the following tasks:
 
@@ -16,6 +20,6 @@ This app will run in the browser and feature dynamically updated HTML and CSS po
 
 * Persist events between refreshes of a page
 
-The following animation demonstrates the application functionality:
+## The following animation demonstrates the application functionality:
 
 ![Demo.](./images/demo.gif)
