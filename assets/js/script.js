@@ -2,6 +2,7 @@
 $("#currentDay").text($dayjs().format("dddd, D MMM YYYY"));
 // calculating time slots from 8am to 5pm
 var beforeTime = dayjs().startOf("day").hour(8);
+
 for (var i = 0; i < 7; i++) {
     var timeSlot = beforeTime.format("HH:mm");
     var timeBlock = 
@@ -14,4 +15,5 @@ for (var i = 0; i < 7; i++) {
     </div>`;
     $("#planner").append(timeBlock);
 }
+
 
