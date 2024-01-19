@@ -1,4 +1,5 @@
-$document.ready(function() {
+
+$(document).ready(function() {
     $("#currentDay").text(dayjs().format("dddd, D MMM YYYY"));
 var beforeTime = dayjs().startOf("day").hour(8);
 for (var i = 0; i < 7; i++) {
@@ -15,8 +16,7 @@ for (var i = 0; i < 7; i++) {
     beforeTime = beforeTime.add(1, 'hours');
 }});
 
-testTime(dayjs().hour(8), ".time-block:nth-child(1)");
-function tesTime(targetTime, elementSelector) {
+function testTime(targetTime, elementSelector) {
     var currentTime = dayjs().startOf("hour");
     if (currentTime.isAfter(targetTime)) {
         $(elementSelector).addClass("past");
@@ -25,6 +25,16 @@ function tesTime(targetTime, elementSelector) {
     } else {
         $(elementSelector).addClass("present");
     }
-    
-
+    }
+    $(".saveBtn").on("click", function () {
+        var index = $(this).data("index");
+        var text = $("#text-" + index).val();
+        localStorage.setItem("task-" + index, text);
+      });
+      for (var i = 1; i <= 8; i++) {
+        var savedTask = localStorage.getItem("task-" + i);
+        if (savedTask) {
+          $("#text-" + i).val(savedTask);
+        }
+      }
 
