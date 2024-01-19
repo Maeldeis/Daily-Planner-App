@@ -1,5 +1,5 @@
-
 $(document).ready(function() {
+
     $("#currentDay").text(dayjs().format("dddd, D MMM YYYY"));
 var beforeTime = dayjs().startOf("day").hour(8);
 for (var i = 0; i < 7; i++) {
@@ -15,7 +15,6 @@ for (var i = 0; i < 7; i++) {
     $("#planner").append(timeBlock);
     beforeTime = beforeTime.add(1, 'hours');
 }});
-
 function testTime(targetTime, elementSelector) {
     var currentTime = dayjs().startOf("hour");
     if (currentTime.isAfter(targetTime)) {
