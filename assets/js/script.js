@@ -14,5 +14,16 @@ for (var i = 0; i < 7; i++) {
     $("#planner").append(timeBlock);
     beforeTime = beforeTime.add(1, 'hours');
 }});
+testTime(dayjs().hour(8), ".time-block:nth-child(1)");
+function tesTime(targetTime, elementSelector) {
+    var currentTime = dayjs().startOf("hour");
+    if (currentTime.isAfter(targetTime)) {
+        $(elementSelector).addClass("past");
+    } else if (currentTime.isBefore(targetTime)) {
+        $(elementSelector).addClass("future");
+    } else {
+        $(elementSelector).addClass("present");
+    }
+    }
 
 
