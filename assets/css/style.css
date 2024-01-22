@@ -54,7 +54,6 @@ header {
 }
 
 .saveBtn {
-  border: none;
   border-top-right-radius: 100px;
   border-bottom-right-radius: 100px;
   background-color: #ffa3a3;
