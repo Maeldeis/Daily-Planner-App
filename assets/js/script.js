@@ -2,7 +2,7 @@ $(document).ready(function() {
 
     $("#currentDay").text(dayjs().format("dddd, D MMM YYYY"));
 var beforeTime = dayjs().startOf("day").hour(8);
-for (var i = 0; i < 7; i++) {
+for (var i = 0; i < 11; i++) {
     var timeSlot = beforeTime.format("HH:mm");
     var timeBlock =
     `<div class="col-12 time-block">
