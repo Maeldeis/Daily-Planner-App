@@ -6,7 +6,7 @@ Deployed Live Link: https://maeldeis.github.io/placeholder
 
 **This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.**
 
-## The app performs the following tasks:
+## The planner app performs the following tasks:
 
 * Display the current day at the top of the calender when a user opens the planner.
  
