@@ -1,4 +1,4 @@
-# Daily-Planner-App
+# Daily Work Day Planner App
 
 GitHub Link: https://github.com/Maeldeis/PlannerApp
 
@@ -6,13 +6,13 @@ Deployed Live Link: https://maeldeis.github.io/PlannerApp
 
 **This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.**
 
-## The planner app performs the following tasks:
+## This app performs the following tasks:
 
-* Display the current day at the top of the calender when a user opens the planner.
+* Displays the current day at the top of the calender when a user opens the planner.
  
 * Present timeblocks for standard business hours when the user scrolls down.
  
-* Color-code each timeblock based on past, present, and future when the timeblock is viewed.
+* Colour-code each timeblock based on past, present, and future when the timeblock is viewed.
  
 * Allow a user to enter an event when they click a timeblock
 
@@ -20,6 +20,6 @@ Deployed Live Link: https://maeldeis.github.io/PlannerApp
 
 * Persist events between refreshes of a page
 
-## The following animation demonstrates the application functionality:
+## The following image demonstrates the final application:
 
 ![Demo.](./assets/images/demo.png)
