@@ -1,8 +1,8 @@
 # Daily-Planner-App
 
-GitHub Link: https://github.com/Maeldeis/placeholder
+GitHub Link: https://github.com/Maeldeis/PlannerApp
 
-Deployed Live Link: https://maeldeis.github.io/placeholder
+Deployed Live Link: https://maeldeis.github.io/PlannerApp
 
 **This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.**
 
@@ -22,4 +22,4 @@ Deployed Live Link: https://maeldeis.github.io/placeholder
 
 ## The following animation demonstrates the application functionality:
 
-![Demo.](./assets/images/demo.gif)
+![Demo.](./assets/images/demo.png)
