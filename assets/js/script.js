@@ -1,14 +1,7 @@
-// script.js
-
 $(document).ready(function () {
-    // Set the initial text content of an element with the id "currentDay"
     $("#currentDay").text(dayjs().format("dddd, D MMM YYYY"));
-  
-    // Calculate time slots for the planner starting from 9 AM to 5 PM
     var beforeTime = dayjs().startOf("day").hour(9);
-  
-    // Create time blocks dynamically for each hour
-    for (var i = 1; i <= 8; i++) {
+    for (var i = 1; i <= 9; i++) {
       var timeSlot = beforeTime.format("HH:mm");
       var timeBlock = `
         <div class="col-12 time-block">
@@ -19,34 +12,23 @@ $(document).ready(function () {
           </div>
         </div>`;
       $("#planner").append(timeBlock);
-  
-      // Move to the next hour
       beforeTime = beforeTime.add(1, "hours");
     }
-  
-   
-  
-    // Function to test and update the class based on the current time
-    function testTime(targetTime, elementSelector) {
-      var currentTime = dayjs().startOf("hour");
-  
-      if (currentTime.isAfter(targetTime)) {
+    function testTime(tarTime, elementSelector) {
+      var currentT = dayjs().startOf("hour");
+      if (currentT.isAfter(tarTime)) {
         $(elementSelector).addClass("past");
-      } else if (currentTime.isBefore(targetTime)) {
+      } else if (currentT.isBefore(tarTime)) {
         $(elementSelector).addClass("future");
-      } else if (currentTime.isSame(targetTime)) {
+      } else if (currentT.isSame(tarTime)) {
         $(elementSelector).addClass("present");
       }
     }
-  
-    // Event handler for button clicks
     $(".saveBtn").on("click", function () {
       var index = $(this).data("index");
       var text = $("#text-" + index).val();
       localStorage.setItem("task-" + index, text);
     });
-  
-    // Load saved tasks from local storage
     for (var i = 1; i <= 8; i++) {
       var savedTask = localStorage.getItem("task-" + i);
       if (savedTask) {
